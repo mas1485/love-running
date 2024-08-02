@@ -1,0 +1,19 @@
+/* asterix wildcard selector to overide default rules from browser */
+
+* {
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: blue;
+}
+
+main {
+    background-color: green
+}
+
+footer {
+    background-color: red;
+}
