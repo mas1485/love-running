@@ -162,6 +162,10 @@ header {
     background-color: lightsalmon;
 }
 
+h1 {
+    font-family: 'ibm plex serif', sans-serif;
+}
+
 main {
     background-color: lightblue;
     /* makes the main element take up surplus space to push footer down */
