@@ -234,8 +234,19 @@ main {
   background: url("../images/hero-image.webp") no-repeat center center/cover;
 }
 
-footer {
-    background-color: lightgreen;
+/* footer */
+#Socials {
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+#Socials i {
+  font-size: 160%;
+  padding: 5%;
+  color: #3a3a3a;
 }
 
 /* media query for tablets and larger (768px and above) */
