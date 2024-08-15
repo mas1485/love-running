@@ -190,11 +190,25 @@ nav {
   font-size: 2rem;
 }
 
+main {
+  /* makes the main element take up surplus space to push footer down */
+  flex: 1 0 auto;
+  margin-top: 47px;
+}
+
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     color: #3a3a3a;
+    font-family: 'ibm plex serif', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'ibm plex serif', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #252525;
 }
 
 header {
@@ -214,24 +228,28 @@ header a {
   color: inherit;
 }
 
-h1 {
-    font-family: 'ibm plex serif', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
-}
-
-main {
-    /* makes the main element take up surplus space to push footer down */
-    flex: 1 0 auto;
-    margin-top: 47px;
-}
-
 /* hero section styles */
 #Hero {
-  height: 600px;
+  height: 700px;
   width: 100%;
   background: url("../images/hero-image.webp") no-repeat center center/cover;
+  position: relative;
+}
+
+#Cover-text { 
+  /* backgrund color using rgba to set opacity to transparent */
+  background-color: rgba(241, 109, 107, .7);
+  font-size: 130%;
+  position: absolute;
+  bottom: 30px;
+  width: 80%;
+  min-height: 200px;
+  padding-top: 40px;
+  padding-left: 10px;
+}
+
+#Cover-text > h2 , #Cover-text > h3 {
+  color: #ffffff;
 }
 
 /* footer */
@@ -244,7 +262,7 @@ main {
 }
 
 #Socials i {
-  font-size: 160%;
+  font-size: 200%;
   padding: 5%;
   color: #3a3a3a;
 }
@@ -285,6 +303,11 @@ main {
     margin-top: 79px;
   }
 
+  /* hero */
+  #Cover-text {
+    width:300px;
+    right: 50px;
+  }
 }
 
 /* media query for mouse-based devices (992px and above) */
